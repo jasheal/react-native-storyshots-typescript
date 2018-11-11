@@ -1,2 +1,5 @@
 import initStoryshots from "@storybook/addon-storyshots";
-initStoryshots();
+
+initStoryshots({
+  storyKindRegex: /^Badge$/,
+});
