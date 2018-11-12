@@ -1,0 +1,10 @@
+{
+	"rootDir": "../",
+	"setupTestFrameworkScriptFile": "./jest/setup.js",
+	"preset": "react-native",
+	"transform": {
+		"^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+		"\\.(ts|tsx)$": "ts-jest"
+  },
+	"testMatch": ["**/__e2e__/**/*.js"]
+}

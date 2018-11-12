@@ -5,8 +5,9 @@ A starter boilerplate project for building your own component library for React 
 - [x] React Native & TypeScript
 - [x] Storbook
 - [x] Storyshots - Jest snapshots of stories
-- [x] CicleCI integration
-- [ ] Detox e2e UI testing
+- [x] CicleCI integration - unit
+- [ ] CicleCI integration - e2e
+- [x] Detox e2e UI testing
 - [ ] Build component library
 
 ### Wishlist
