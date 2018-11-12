@@ -17,9 +17,10 @@ exports[`Storyshots Button hello 1`] = `
       "opacity": 1,
     }
   }
+  testID="TestButton1"
 >
   <Text>
-    Hello
+    Hello World
   </Text>
 </View>
 `;

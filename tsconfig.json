@@ -22,6 +22,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
+  "typeRoots": ["./node_modules/@types"],
   "baseUrl": ".",
   "include": ["src/**/*", "storybook/**/*", "test/**/*"],
   "exclude": ["node_modules", "build", "scripts"]
