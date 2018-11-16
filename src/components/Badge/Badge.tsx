@@ -1,5 +1,5 @@
-import * as React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import * as React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 interface BadgeProps {
   count: number;
@@ -15,17 +15,16 @@ const Badge = ({ count }: BadgeProps) => {
 
 const styles = StyleSheet.create({
   badge: {
-    alignSelf: "center",
+    alignSelf: 'center',
     marginTop: 50,
     backgroundColor: 'red',
     borderRadius: 20,
-    padding: 10
+    padding: 10,
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
-    
-  }
+  },
 });
 
 export default Badge;

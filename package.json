@@ -9,7 +9,7 @@
     "test:e2e": "detox test -c ios.sim.debug",
     "test:e2e:build": "detox build",
     "docs": "cd ./website && yarn start",
-    "prettify": "prettier --write 'src/**/*.(ts|tsx|js)'"
+    "format": "prettier --config prettier.json --write \"./src/**/*.{jsx,ts,tsx}\" && git status"
   },
   "dependencies": {
     "jest-static-stubs": "^0.0.1",
