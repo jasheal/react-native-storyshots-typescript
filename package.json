@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "tsc --p ./tsconfig.lib.json",
+    "build:dev": "tsc --p ./tsconfig.lib.json --watch",
     "test": "jest",
     "storybook": "storybook start --config-dir storybook",
     "test:e2e": "detox test -c ios.sim.debug",
@@ -12,7 +14,6 @@
     "format": "prettier --config prettier.json --write \"./src/**/*.{jsx,ts,tsx}\" && git status"
   },
   "dependencies": {
-    "jest-static-stubs": "^0.0.1",
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4"
   },
@@ -30,18 +31,15 @@
     "@types/storybook__addon-storyshots": "^3.4.3",
     "@types/storybook__react": "^4.0.0",
     "@types/storybook__react-native": "^3.0.2",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
     "babel-jest": "23.6.0",
     "babel-runtime": "^6.26.0",
     "detox": "^9.0.6",
     "jest": "^23.6.0",
+    "jest-static-stubs": "^0.0.1",
     "metro-react-native-babel-preset": "0.49.0",
     "prettier": "^1.15.2",
-    "prop-types": "^15.6.2",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "16.6.0-alpha.8af6728",
-    "react-native-storybook-loader": "^1.8.0",
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.6.0-alpha.8af6728",
     "storybook-addon-jsx": "^5.4.0",
@@ -55,6 +53,7 @@
     "moduleNameMapper": {
       ".+\\.(png)$": "jest-static-stubs/png"
     },
+    "testPathIgnorePatterns": ["lib", "node_modules"],
     "testRegex": "(/__tests__/.*|\\.(test))\\.(ts|tsx|js)$",
     "moduleFileExtensions": [
       "ts",
