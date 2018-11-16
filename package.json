@@ -8,7 +8,8 @@
     "storybook": "storybook start --config-dir storybook",
     "test:e2e": "detox test -c ios.sim.debug",
     "test:e2e:build": "detox build",
-    "docs": "cd ./website && yarn start"
+    "docs": "cd ./website && yarn start",
+    "format": "prettier --config prettier.json --write \"./src/**/*.{jsx,ts,tsx}\" && git status"
   },
   "dependencies": {
     "jest-static-stubs": "^0.0.1",
@@ -36,6 +37,7 @@
     "detox": "^9.0.6",
     "jest": "^23.6.0",
     "metro-react-native-babel-preset": "0.49.0",
+    "prettier": "^1.15.2",
     "prop-types": "^15.6.2",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "16.6.0-alpha.8af6728",

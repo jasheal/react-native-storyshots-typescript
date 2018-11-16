@@ -1,5 +1,5 @@
-import * as React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import * as React from 'react';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface ButtonProps {
   text: string;
@@ -17,9 +17,9 @@ const Button = ({ onPress, text, testID }: ButtonProps) => {
 
 const styles = StyleSheet.create({
   button: {
-    alignSelf: "center",
-    marginTop: 100
-  }
+    alignSelf: 'center',
+    marginTop: 100,
+  },
 });
 
 export default Button;
