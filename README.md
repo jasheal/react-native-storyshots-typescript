@@ -7,9 +7,9 @@ A starter boilerplate project for building your own component library for React 
 - [x] Storyshots - Jest snapshots of stories
 - [x] Code formatting
 - [x] CicleCI integration - unit
-- [ ] CicleCI integration - e2e
+- [X] CicleCI integration - e2e
 - [x] Detox e2e UI testing
-- [ ] Build component library
+- [X] Build component library
 
 ### Wishlist
 - Auto generated documentation for Storybook and TypeScript in React Native. Currently not supported. 
